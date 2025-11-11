@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación Baby Shower</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Julius+Sans+One&family=Varela+Round&display=swap');
+    
+    :root {
+      --color-principal: #F5CBCB;
+      --color-secundario: #443627;
+      --color-texto: #e06b80;
+      --color-titulo: #f37199;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Pacifico";
+      background: #FFEAEA;
+    }
+
+    .images {
+    max-width: 300px;
+    margin: auto;
+
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-image: url(/Imagenes/Fondo_Invitacion_2.jpg);
+      background-size: cover;
+      border-radius: 12px;
+      padding: 20px;
+      color: var(--color-texto);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .varela-round-regular {
+      font-family: "Varela Round", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .julius-sans-one-regular {
+     font-family: "Julius Sans One", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+    }
+
+    
+    .dancing-script {
+     font-family: "Dancing Script", cursive;
+     font-optical-sizing: auto;
+     font-weight: 300;
+     font-style: normal;
+    }
+
+
+    h1 {
+      color: var(--color-secundario);
+      font-size: 3em;
+      margin-bottom: 10px;
+      font-family: "Dancing Script";
+      
+    }
+
+    h2 {    
+      color: var(--color-titulo);
+      font-size: 4em;
+      margin-bottom: 70px;
+      font-family: "Dancing Script";      
+    }
+
+    h3 {
+      color: var(--color-secundario);
+      font-size: 1em;
+      margin-bottom: 10px;
+      font-family:"Julius Sans One" ;
+    }
+
+    p {
+      font-size: 1em;
+      color: var(--color-secundario);
+      font-family:"Julius Sans One" ;
+      margin: 10px 0;
+    }
+
+    #countdown {
+      font-weight: bold;
+      font-size: 2.1em;
+      color: var(--color-secundario);
+      margin: 15px 0;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 12px 20px;
+      background: var(--color-principal);
+      color: var(--color-secundario);
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      font-size: 0.95em;
+    }
+
+    .button:hover {
+      background: #d3242481;
+    }
+
+    .footer {
+      background: rgba(255,255,255,0.2);
+      padding: 15px;
+      font-size: 0.9em;
+      color: #eee;
+      border-radius: 0 0 12px 12px;
+    }
+
+    .audio-player {
+      margin-top: 20px;
+      background-color: rgba(226, 150, 150, 0.3);
+      border-radius: 12px;
+      padding: 10px;
+      width: 400px;
+      backdrop-filter: blur(4px);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .audio-player audio {
+      width: 100%;
+      opacity: 0.75;
+    }
+
+    @media screen and (max-width: 480px) {
+     .audio-player {
+        width: 90%;
+        margin: 10px auto;
+    }
+      
+     .container {
+        margin: 10px;
+        border-radius: 8px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      .button {
+        width: 90%;
+        margin: 8px auto;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <img class="images" src="/Imagenes/Conejita_flores_2.png" alt="">
+
+    <h1>Hernan y Mafe</h1>
+    <h3>Te invitan al</h3>
+    <h3>Baby Shower</h3>
+    <h3>De</h3>
+    <h2>Aitana Rubio Murcia</h2>
+    <img class="images" src="/Imagenes/bbe_Dormida_1.png" alt="">
+    <p><strong>📅 Fecha:</strong> Domingo 7 de Diciembre de 2025<br />
+       <strong>🕒 Hora:</strong> 11:00 AM<br/>
+    <a class="button" href="https://forms.gle/tuFormularioEditable" target="_blank"> <strong>✅ Confirmar asistencia</strong></a>
+    <a class="button" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Baby+Shower+Aitana+Rubio+Murcia&dates=20251207T160000Z/20251207T180000Z&details=Celebración+en+Quintas+de+Timiza+1&location=CL+40C+Sur+72k+80+Bogotá" target="_blank"> <strong>📅 Agregar al calendario </strong></a></p>
+
+    <p> <strong>📍 Lugar:</strong> CL 40C Sur 72k 80, Quintas de Timiza 1, Salón Social 3 <br/> 
+       <a class="button" href="https://www.google.com/maps?q=CL+40C+Sur+72k+80+Bogotá" target="_blank"> <strong>🗺️ Ver ubicación</strong></a></p>
+  
+   <div class="audio-player">
+    <audio controls autoplay>
+    <source src="/Imagenes/Cancion_Invitacion.mpeg" type="audio/mpeg" />
+    Tu navegador no soporta audio HTML5.
+    </audio>
+    </div>
+
+    <h3>Cuenta Regresiva:</h3>
+    <p id="countdown"></p>
+    
+    <div class="footer">
+      ¡Esperamos compartir contigo esta hermosa celebración!
+    </div>
+  </div>
+
+<script>
+  const targetDate = new Date("2025-12-07T11:00:00");
+  const countdown = document.getElementById("countdown");
+
+  setInterval(() => {
+    const now = new Date();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+      countdown.textContent = "¡Es hoy! 🎉";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    countdown.textContent = `Faltan ${days} días, ${hours}h ${minutes}m ${seconds}s`;
+  }, 1000);
+</script>
+</body>
+</html>
