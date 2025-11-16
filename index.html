@@ -237,13 +237,20 @@
 
 <script>
 
-function iniciarAudio() {
-    const audio = document.getElementById("musica");
-    audio.volume = 0.25;
-    audio.play();
-    document.body.removeEventListener("click", iniciarAudio);
+  let audioIniciado = false;
+
+  function iniciarAudioConScroll() {
+    if (!audioIniciado) {
+      const audio = document.getElementById("musica");
+      audio.volume = 0.25;
+      audio.play();
+      audioIniciado = true;
+      window.removeEventListener("scroll", iniciarAudioConScroll);
+    }
   }
-  document.body.addEventListener("click", iniciarAudio);
+
+  window.addEventListener("scroll", iniciarAudioConScroll);
+
 
   const targetDate = new Date("2025-12-07T11:00:00");
   const countdown = document.getElementById("countdown");
