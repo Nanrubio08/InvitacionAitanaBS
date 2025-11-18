@@ -1,183 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Imperial+Script&family=Julius+Sans+One&family=Varela+Round&display=swap');
-    
-    :root {
-      --color-principal: #F5CBCB;
-      --color-secundario: #443627;
-      --color-texto: #e06b80;
-      --color-titulo: #f37199;
-    }
 
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: "Pacifico";
-      background: #FFEAEA;
-    }
+:root {
+  --color-principal: #F5CBCB;
+  --color-secundario: #443627;
+  --color-texto: #e06b80;
+  --color-titulo: #f37199;
+}
 
-    .images {
-    max-width: 300px;
+/* Base */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Varela Round", sans-serif;
+  background: #FFEAEA;
+  color: var(--color-secundario);
+  text-align: center;
+}
 
-    }
+/* Contenedor principal */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-image: url(Imagenes/Fondo_Invitacion_5.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  padding: 10px;
+  color: var(--color-texto);
+  animation: fadeIn 1s ease-in-out;
+}
 
-    .container {
-      max-width: 600px;
-      margin: 20px auto;
-      background-image: url(Imagenes/Fondo_Invitacion_5.png);
-      background-size: cover;
-      border-radius: 12px;
-      padding: 10px;
-      color: var(--color-texto);
-      text-align: center;
-      animation: fadeIn 1s ease-in-out;
-    }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+/* Tipografías personalizadas */
+.varela-round-regular { font-family: "Varela Round", sans-serif; }
+.julius-sans-one-regular { font-family: "Julius Sans One", sans-serif; }
+.imperial-script-regular { font-family: "Imperial Script", cursive; }
+.dancing-script { font-family: "Dancing Script", cursive; }
 
-    .varela-round-regular {
-      font-family: "Varela Round", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-    }
+/* Títulos */
+h1 {
+  color: var(--color-secundario);
+  font-size: clamp(2rem, 5vw, 3em);
+  font-family: "Dancing Script", cursive;
+}
 
-    .julius-sans-one-regular {
-     font-family: "Julius Sans One", sans-serif;
-     font-weight: 400;
-     font-style: normal;
-    }
+h2 {
+  color: var(--color-titulo);
+  font-size: clamp(2.5rem, 6vw, 4em);
+  margin: 10px 0;
+  font-family: "Dancing Script", cursive;
+}
 
-    .imperial-script-regular {
-    font-family: "Imperial Script", cursive;
-    font-weight: 400;
-    font-style: normal;
-    }
+h3 {
+  color: var(--color-secundario);
+  font-size: 1em;
+  margin-bottom: 10px;
+  font-family: "Julius Sans One", sans-serif;
+}
 
+/* Texto */
+p {
+  font-size: 1em;
+  font-family: "Julius Sans One", sans-serif;
+  margin: 30px 0;
+}
 
-    .dancing-script {
-     font-family: "Dancing Script", cursive;
-     font-optical-sizing: auto;
-     font-weight: 300;
-     font-style: normal;
-    }
+.letraFasti {
+  font-family: "Imperial Script", cursive;
+  margin: 5px 0;
+}
 
+.regalos {
+  font-size: 1em;
+  margin-bottom: 10px;
+  font-family: "Julius Sans One", sans-serif;
+}
 
-    h1 {
-      color: var(--color-secundario);
-      font-size: 3em;
-      font-family: "Dancing Script";
-      
-    }
+/* Imágenes */
+.images {
+  max-width: 300px;
+  height: auto;
+  margin: 16px auto;
+  display: block;
+  border-radius: 12px;
+}
 
-    h2 {    
-      color: var(--color-titulo);
-      font-size: 4em;
-      margin-bottom: 10px;
-      margin-top: 10px;
-      font-family: "Dancing Script";      
-    }
+/* Cuenta regresiva */
+#countdown {
+  font-weight: bold;
+  font-size: 2.1em;
+  color: var(--color-secundario);
+  margin: 15px 0;
+}
 
-    h3 {
-      color: var(--color-secundario);
-      font-size: 1em;
-      margin-bottom: 10px;
-      font-family:"Julius Sans One" ;
-    }
+/* Botones */
+.button {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 12px 20px;
+  background: var(--color-principal);
+  color: var(--color-secundario);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 0.95em;
+  cursor: pointer;
+}
 
-    p {
-      font-size: 1em;
-      color: var(--color-secundario);
-      font-family:"Julius Sans One" ;
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
+.button:hover {
+  background: #f37199;
+  color: #fff;
+  transform: scale(1.05);
+}
 
-    .letraFasti {
-      font-family: "Imperial Script", cursive;
-      margin-bottom: 5px;
-      margin-top: 5px;
-    }
+/* Footer */
+.footer {
+  background: rgba(255,255,255,0.2);
+  padding: 15px;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 0.9em;
+  color: #a86363;
+  border-radius: 0 0 12px 12px;
+}
 
-    .regalos {
-      color: var(--color-secundario);
-      font-size: 1em;
-      margin-bottom: 10px;
-      font-family:"Julius Sans One" ;
-    }
+/* Audio player */
+.audio-player {
+  margin-top: 20px;
+  background-color: rgba(226, 150, 150, 0.3);
+  border-radius: 12px;
+  padding: 10px;
+  width: 400px;
+  max-width: 100%;
+  backdrop-filter: blur(4px);
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    #countdown {
-      font-weight: bold;
-      font-size: 2.1em;
-      color: var(--color-secundario);
-      margin: 15px 0;
-    }
+.audio-player audio {
+  width: 100%;
+  opacity: 0.75;
+}
 
-    .button {
-      display: inline-block;
-      margin: 10px 5px;
-      padding: 12px 20px;
-      background: var(--color-principal);
-      color: var(--color-secundario);
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-      font-family:"Julius Sans One";
-      font-size: 0.95em;
-    }
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .audio-player {
+    width: 90%;
+    margin: 10px auto;
+  }
 
-    .button:hover {
-      background: #d3242481;
-    }
+  .container {
+    margin: 10px;
+    border-radius: 8px;
+  }
 
-    .footer {
-      background: rgba(255,255,255,0.2);
-      padding: 15px;
-      font-family: "Julius Sans One";
-      font-size: 0.9em;
-      color: #a86363;
-      border-radius: 0 0 12px 12px;
-    }
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 2.2rem; }
 
-    .audio-player {
-      margin-top: 20px;
-      background-color: rgba(226, 150, 150, 0.3);
-      border-radius: 12px;
-      padding: 10px;
-      width: 400px;
-      backdrop-filter: blur(4px);
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .audio-player audio {
-      width: 100%;
-      opacity: 0.75;
-    }
-
-    @media screen and (max-width: 480px) {
-     .audio-player {
-        width: 90%;
-        margin: 10px auto;
-    }
-      
-     .container {
-        margin: 10px;
-        border-radius: 8px;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-      }
-      h2 {
-        font-size: 2.5rem;
-      }
-  
-
-      .button {
-        width: 60%;
-        margin: 8px auto;
-        display: block;
-      }
-    }
+  .button {
+    width: 70%;
+    margin: 8px auto;
+    display: block;
+  }
+}
