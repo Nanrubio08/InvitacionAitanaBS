@@ -4,191 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Invitación Baby Shower</title>
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Imperial+Script&family=Julius+Sans+One&family=Varela+Round&display=swap');
-    
-    :root {
-      --color-principal: #F5CBCB;
-      --color-secundario: #443627;
-      --color-texto: #e06b80;
-      --color-titulo: #f37199;
-    }
+  <link rel="stylesheet" href="Styles.css">
 
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: "Pacifico";
-      background: #FFEAEA;
-    }
+  <meta property="og:title" content="Baby Shower de Aitana 💕" />
+  <meta property="og:description" content="Te invitamos a celebrar con nosotros este día especial." />
+  <meta property="og:image" content="Imagenes/Conejita_flores_2" />
+  <meta property="og:url" content="https://nanrubio08.github.io/InvitacionAitanaBS/" />
+  <meta property="og:type" content="website" />
 
-    .images {
-    max-width: 300px;
-
-    }
-
-    .container {
-      max-width: 600px;
-      margin: 20px auto;
-      background-image: url(Imagenes/Fondo_Invitacion_5.png);
-      background-size: cover;
-      border-radius: 12px;
-      padding: 10px;
-      color: var(--color-texto);
-      text-align: center;
-      animation: fadeIn 1s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .varela-round-regular {
-      font-family: "Varela Round", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-    }
-
-    .julius-sans-one-regular {
-     font-family: "Julius Sans One", sans-serif;
-     font-weight: 400;
-     font-style: normal;
-    }
-
-    .imperial-script-regular {
-    font-family: "Imperial Script", cursive;
-    font-weight: 400;
-    font-style: normal;
-    }
-
-
-    .dancing-script {
-     font-family: "Dancing Script", cursive;
-     font-optical-sizing: auto;
-     font-weight: 300;
-     font-style: normal;
-    }
-
-
-    h1 {
-      color: var(--color-secundario);
-      font-size: 3em;
-      font-family: "Dancing Script";
-      
-    }
-
-    h2 {    
-      color: var(--color-titulo);
-      font-size: 4em;
-      margin-bottom: 10px;
-      margin-top: 10px;
-      font-family: "Dancing Script";      
-    }
-
-    h3 {
-      color: var(--color-secundario);
-      font-size: 1em;
-      margin-bottom: 10px;
-      font-family:"Julius Sans One" ;
-    }
-
-    p {
-      font-size: 1em;
-      color: var(--color-secundario);
-      font-family:"Julius Sans One" ;
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-
-    .letraFasti {
-      font-family: "Imperial Script", cursive;
-      margin-bottom: 5px;
-      margin-top: 5px;
-    }
-
-    .regalos {
-      color: var(--color-secundario);
-      font-size: 1em;
-      margin-bottom: 10px;
-      font-family:"Julius Sans One" ;
-    }
-
-    #countdown {
-      font-weight: bold;
-      font-size: 2.1em;
-      color: var(--color-secundario);
-      margin: 15px 0;
-    }
-
-    .button {
-      display: inline-block;
-      margin: 10px 5px;
-      padding: 12px 20px;
-      background: var(--color-principal);
-      color: var(--color-secundario);
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-      font-family:"Julius Sans One";
-      font-size: 0.95em;
-    }
-
-    .button:hover {
-      background: #d3242481;
-    }
-
-    .footer {
-      background: rgba(255,255,255,0.2);
-      padding: 15px;
-      font-family: "Julius Sans One";
-      font-size: 0.9em;
-      color: #a86363;
-      border-radius: 0 0 12px 12px;
-    }
-
-    .audio-player {
-      margin-top: 20px;
-      background-color: rgba(226, 150, 150, 0.3);
-      border-radius: 12px;
-      padding: 10px;
-      width: 400px;
-      backdrop-filter: blur(4px);
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .audio-player audio {
-      width: 100%;
-      opacity: 0.75;
-    }
-
-    @media screen and (max-width: 480px) {
-     .audio-player {
-        width: 90%;
-        margin: 10px auto;
-    }
-      
-     .container {
-        margin: 10px;
-        border-radius: 8px;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-      }
-      h2 {
-        font-size: 2.5rem;
-      }
-  
-
-      .button {
-        width: 60%;
-        margin: 8px auto;
-        display: block;
-      }
-    }
-  </style>
 </head>
 <body onclick="iniciarAudio()">
   <div class="container">
@@ -212,10 +35,8 @@
     <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdKn9f9584U2jOa8TE35iKpdGanIBb29j44LmFYEWGke0quUQ/viewform?usp=dialog" target="_blank"> <strong>✅ Confirmar asistencia</strong></a>
     <a class="button" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Baby+Shower+Aitana+Rubio+Murcia&dates=20251207T160000Z/20251207T180000Z&details=Celebración+en+Quintas+de+Timiza+1&location=CL+40C+Sur+72k+80+Bogotá" target="_blank"> <strong>📅 Agregar al calendario </strong></a></p>
 
-     <p class="regalos"> <strong>Nuestro regalo más grande es tu presencia, <br/> 
-      pero si deseas tener un detalle con nosotros <br/> 
-      te damos esta opción </strong><br/> 
-      <a class="button" href="https://onedrive.live.com/personal/860e6c9b85cbebca/_layouts/15/Doc.aspx?sourcedoc=%7Ba521cd71-e7c6-4ab7-a121-236196df2bc6%7D&action=default&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy84NjBlNmM5Yjg1Y2JlYmNhL0VYSE5JYVhHNTdkS29TRWpZWmJmSzhZQnBjc1NVWDU5VE5ZMHJYWnlsa0t4T0E_ZT03eTdHMFU&slrid=48cfd9a1-30a8-1000-0ce8-ed9ae759b865&originalPath=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy84NjBlNmM5Yjg1Y2JlYmNhL0VYSE5JYVhHNTdkS29TRWpZWmJmSzhZQnBjc1NVWDU5VE5ZMHJYWnlsa0t4T0E_cnRpbWU9SERsNEVNTWsza2c&CID=bc0bba95-b31e-48df-868d-eaf3e50ad4aa&_SRM=0:G:42" target="_blank"> <strong>🎁 Lista de Regalos </strong></a></p>
+     <p class="regalos"> <strong>Nuestro regalo más grande es tu presencia, pero si deseas tener uo detalle con nosotros te damos esta opción </strong><br/> 
+      <a class="button" href="https://docs.google.com/spreadsheets/d/1LH1nhyrEScK-ChT2EAlJoH3vs-xxJNZTlSrqVPKk634/edit?usp=sharing" target="_blank"> <strong>🎁 Lista de Regalos </strong></a></p>
 
     <p> <strong>📍 Lugar:</strong> CL 40C Sur 72k 80, Quintas de Timiza 1, Salón Social 3 <br/> 
        <a class="button" href="https://www.google.com/maps?q=CL+40C+Sur+72k+80+Bogotá" target="_blank"> <strong>🗺️ Ver ubicación</strong></a></p>
